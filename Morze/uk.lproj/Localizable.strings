@@ -1,0 +1,12 @@
+/* 
+  Localizable.strings
+  Morze
+
+  Created by Mykhailo on 25.07.2022.
+  
+*/
+
+// MARK: Tab
+"HOME_TAB" = "Home";
+"TRANSMITTER_TAB" = "Transmitter";
+"SETTINGS" = "Settings";
