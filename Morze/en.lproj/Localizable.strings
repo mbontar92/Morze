@@ -10,3 +10,7 @@
 "HOME_TAB" = "Home";
 "TRANSMITTER_TAB" = "Transmitter";
 "SETTINGS" = "Settings";
+
+// MARK: - Home
+"AUTHORIZE" = "Authorize";
+"CREATE_ACCOUNT_TITLE" = "Create account man Create account man Create account man Create account man Create account man Create account man Create account man Create account man Create account man";

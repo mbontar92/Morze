@@ -9,8 +9,6 @@ import SwiftUI
 
 struct TransmitterView: View {
     var body: some View {
-        Color.red.ignoresSafeArea()
-        
         Text("TransmitterView")
     }
 }

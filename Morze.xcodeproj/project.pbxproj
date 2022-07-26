@@ -135,9 +135,9 @@
 				06761CCC288EA7A800A91FE8 /* MorzeApp.swift */,
 				06269730288EB331007ED8B6 /* Extensions */,
 				06761CDD288EAE9500A91FE8 /* View */,
-				06761CDC288EAE7800A91FE8 /* ViewModels */,
+				06B64C6628901C9C00316FD3 /* ViewModels */,
+				06B64C6528901C9100316FD3 /* DataRepositories */,
 				06761CDE288EAE9E00A91FE8 /* Models */,
-				06761CDB288EAE6C00A91FE8 /* DataRepositories */,
 				06761CDA288EAD7900A91FE8 /* Info.plist */,
 				06761CD0288EA7AC00A91FE8 /* Assets.xcassets */,
 				06761CD2288EA7AC00A91FE8 /* Preview Content */,
@@ -152,20 +152,6 @@
 				06761CD3288EA7AC00A91FE8 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		06761CDB288EAE6C00A91FE8 /* DataRepositories */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = DataRepositories;
-			sourceTree = "<group>";
-		};
-		06761CDC288EAE7800A91FE8 /* ViewModels */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModels;
 			sourceTree = "<group>";
 		};
 		06761CDD288EAE9500A91FE8 /* View */ = {
@@ -186,6 +172,20 @@
 				06288BC5288EBAEF001883D9 /* PreferenceKey.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		06B64C6528901C9100316FD3 /* DataRepositories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = DataRepositories;
+			sourceTree = "<group>";
+		};
+		06B64C6628901C9C00316FD3 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
