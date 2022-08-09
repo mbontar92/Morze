@@ -23,9 +23,10 @@ struct HomeView: View {
                     .foregroundColor(Color.blue)
                     .padding(EdgeInsets(top: 0, leading: 36, bottom: 0, trailing: 36))
                     .multilineTextAlignment(.center)
-                // MARK: - TODO navigate to Authorize view
                 
-                NavigationLink(destination: TransmitterView()) {
+                NavigationLink(
+                    destination: LogInView()
+                ) {
                     Text("AUTHORIZE".localized)
                         .padding(24)
                         .frame(height: 50)

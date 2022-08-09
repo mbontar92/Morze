@@ -17,6 +17,9 @@
 		06288BD5288ECD3E001883D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD4288ECD3E001883D9 /* HomeView.swift */; };
 		06288BD7288ECD51001883D9 /* TransmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD6288ECD51001883D9 /* TransmitterView.swift */; };
 		06288BD9288ECD5B001883D9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD8288ECD5B001883D9 /* SettingsView.swift */; };
+		063C434C2891195A00957460 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063C434B2891195A00957460 /* LogInView.swift */; };
+		06452D8428A288590072081F /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06452D8328A288590072081F /* View+CornerRadius.swift */; };
+		06452D8728A293FD0072081F /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 06452D8628A293FD0072081F /* Introspect */; };
 		0647766A288ECFF500DCECD5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06477669288ECFF500DCECD5 /* Colors.swift */; };
 		06761CCD288EA7A800A91FE8 /* MorzeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06761CCC288EA7A800A91FE8 /* MorzeApp.swift */; };
 		06761CD1288EA7AC00A91FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06761CD0288EA7AC00A91FE8 /* Assets.xcassets */; };
@@ -35,6 +38,8 @@
 		06288BD4288ECD3E001883D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		06288BD6288ECD51001883D9 /* TransmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmitterView.swift; sourceTree = "<group>"; };
 		06288BD8288ECD5B001883D9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		063C434B2891195A00957460 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		06452D8328A288590072081F /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
 		06477669288ECFF500DCECD5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		06761CC9288EA7A800A91FE8 /* Morze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06761CCC288EA7A800A91FE8 /* MorzeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorzeApp.swift; sourceTree = "<group>"; };
@@ -48,6 +53,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06452D8728A293FD0072081F /* Introspect in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,10 +111,19 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
+		063C434A2891194000957460 /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				063C434B2891195A00957460 /* LogInView.swift */,
+			);
+			path = LogIn;
+			sourceTree = "<group>";
+		};
 		06477668288ECFEA00DCECD5 /* UI */ = {
 			isa = PBXGroup;
 			children = (
 				06477669288ECFF500DCECD5 /* Colors.swift */,
+				06452D8328A288590072081F /* View+CornerRadius.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -157,6 +172,7 @@
 		06761CDD288EAE9500A91FE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				063C434A2891194000957460 /* LogIn */,
 				06288BCA288EBD4F001883D9 /* Home */,
 				06288BCB288EBD5C001883D9 /* Transmitter */,
 				06288BCC288EBD63001883D9 /* Settings */,
@@ -205,6 +221,7 @@
 			);
 			name = Morze;
 			packageProductDependencies = (
+				06452D8628A293FD0072081F /* Introspect */,
 			);
 			productName = Morze;
 			productReference = 06761CC9288EA7A800A91FE8 /* Morze.app */;
@@ -236,6 +253,7 @@
 			);
 			mainGroup = 06761CC0288EA7A800A91FE8;
 			packageReferences = (
+				06452D8528A293FD0072081F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */,
 			);
 			productRefGroup = 06761CCA288EA7A800A91FE8 /* Products */;
 			projectDirPath = "";
@@ -265,11 +283,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				06288BD7288ECD51001883D9 /* TransmitterView.swift in Sources */,
+				06452D8428A288590072081F /* View+CornerRadius.swift in Sources */,
 				0647766A288ECFF500DCECD5 /* Colors.swift in Sources */,
 				06288BD5288ECD3E001883D9 /* HomeView.swift in Sources */,
 				06288BC2288EB766001883D9 /* TabView.swift in Sources */,
 				06269728288EB09A007ED8B6 /* Tab.swift in Sources */,
 				06288BBF288EB3EB001883D9 /* String+Localized.swift in Sources */,
+				063C434C2891195A00957460 /* LogInView.swift in Sources */,
 				06288BC6288EBAEF001883D9 /* PreferenceKey.swift in Sources */,
 				06288BC9288EBBDB001883D9 /* UIView+BackgroundStyle.swift in Sources */,
 				06288BC4288EBAB9001883D9 /* MorzeTabBar.swift in Sources */,
@@ -489,6 +509,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		06452D8528A293FD0072081F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/siteline/SwiftUI-Introspect";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		06452D8628A293FD0072081F /* Introspect */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 06452D8528A293FD0072081F /* XCRemoteSwiftPackageReference "SwiftUI-Introspect" */;
+			productName = Introspect;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 06761CC1288EA7A800A91FE8 /* Project object */;
 }

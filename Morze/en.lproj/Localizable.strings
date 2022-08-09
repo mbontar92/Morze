@@ -14,3 +14,11 @@
 // MARK: - Home
 "AUTHORIZE" = "Authorize";
 "CREATE_ACCOUNT_TITLE" = "Create account man Create account man Create account man Create account man Create account man Create account man Create account man Create account man Create account man";
+
+// MARK: - Login
+"WELCOME" = "WELCOME!";
+"CONTINUE_WITH" = "continue with:";
+"OR_WITH_EMAIL" = "or with email";
+"LOGIN" = "Login";
+"REGISTER" = "Register";
+"AUTHORIZE" = "Authorize";
