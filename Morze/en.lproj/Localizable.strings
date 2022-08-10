@@ -22,3 +22,5 @@
 "LOGIN" = "Login";
 "REGISTER" = "Register";
 "AUTHORIZE" = "Authorize";
+"EMAIL" = "Email";
+"PASSWORD" = "Password";

@@ -25,7 +25,7 @@ struct HomeView: View {
                     .multilineTextAlignment(.center)
                 
                 NavigationLink(
-                    destination: LogInView()
+                    destination: AuthorizationView()
                 ) {
                     Text("AUTHORIZE".localized)
                         .padding(24)

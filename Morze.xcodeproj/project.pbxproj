@@ -17,9 +17,10 @@
 		06288BD5288ECD3E001883D9 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD4288ECD3E001883D9 /* HomeView.swift */; };
 		06288BD7288ECD51001883D9 /* TransmitterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD6288ECD51001883D9 /* TransmitterView.swift */; };
 		06288BD9288ECD5B001883D9 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06288BD8288ECD5B001883D9 /* SettingsView.swift */; };
-		063C434C2891195A00957460 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063C434B2891195A00957460 /* LogInView.swift */; };
+		063C434C2891195A00957460 /* AuthorizationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063C434B2891195A00957460 /* AuthorizationView.swift */; };
 		06452D8428A288590072081F /* View+CornerRadius.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06452D8328A288590072081F /* View+CornerRadius.swift */; };
 		06452D8728A293FD0072081F /* Introspect in Frameworks */ = {isa = PBXBuildFile; productRef = 06452D8628A293FD0072081F /* Introspect */; };
+		06452D8A28A2A3350072081F /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06452D8928A2A3350072081F /* LogInView.swift */; };
 		0647766A288ECFF500DCECD5 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06477669288ECFF500DCECD5 /* Colors.swift */; };
 		06761CCD288EA7A800A91FE8 /* MorzeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06761CCC288EA7A800A91FE8 /* MorzeApp.swift */; };
 		06761CD1288EA7AC00A91FE8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 06761CD0288EA7AC00A91FE8 /* Assets.xcassets */; };
@@ -38,8 +39,9 @@
 		06288BD4288ECD3E001883D9 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		06288BD6288ECD51001883D9 /* TransmitterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransmitterView.swift; sourceTree = "<group>"; };
 		06288BD8288ECD5B001883D9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
-		063C434B2891195A00957460 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
+		063C434B2891195A00957460 /* AuthorizationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorizationView.swift; sourceTree = "<group>"; };
 		06452D8328A288590072081F /* View+CornerRadius.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+CornerRadius.swift"; sourceTree = "<group>"; };
+		06452D8928A2A3350072081F /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		06477669288ECFF500DCECD5 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		06761CC9288EA7A800A91FE8 /* Morze.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Morze.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		06761CCC288EA7A800A91FE8 /* MorzeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MorzeApp.swift; sourceTree = "<group>"; };
@@ -111,10 +113,19 @@
 			path = Settings;
 			sourceTree = "<group>";
 		};
-		063C434A2891194000957460 /* LogIn */ = {
+		063C434A2891194000957460 /* AuthorizationView */ = {
 			isa = PBXGroup;
 			children = (
-				063C434B2891195A00957460 /* LogInView.swift */,
+				06452D8828A2A22E0072081F /* LogIn */,
+				063C434B2891195A00957460 /* AuthorizationView.swift */,
+			);
+			path = AuthorizationView;
+			sourceTree = "<group>";
+		};
+		06452D8828A2A22E0072081F /* LogIn */ = {
+			isa = PBXGroup;
+			children = (
+				06452D8928A2A3350072081F /* LogInView.swift */,
 			);
 			path = LogIn;
 			sourceTree = "<group>";
@@ -172,7 +183,7 @@
 		06761CDD288EAE9500A91FE8 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				063C434A2891194000957460 /* LogIn */,
+				063C434A2891194000957460 /* AuthorizationView */,
 				06288BCA288EBD4F001883D9 /* Home */,
 				06288BCB288EBD5C001883D9 /* Transmitter */,
 				06288BCC288EBD63001883D9 /* Settings */,
@@ -289,7 +300,8 @@
 				06288BC2288EB766001883D9 /* TabView.swift in Sources */,
 				06269728288EB09A007ED8B6 /* Tab.swift in Sources */,
 				06288BBF288EB3EB001883D9 /* String+Localized.swift in Sources */,
-				063C434C2891195A00957460 /* LogInView.swift in Sources */,
+				063C434C2891195A00957460 /* AuthorizationView.swift in Sources */,
+				06452D8A28A2A3350072081F /* LogInView.swift in Sources */,
 				06288BC6288EBAEF001883D9 /* PreferenceKey.swift in Sources */,
 				06288BC9288EBBDB001883D9 /* UIView+BackgroundStyle.swift in Sources */,
 				06288BC4288EBAB9001883D9 /* MorzeTabBar.swift in Sources */,

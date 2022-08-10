@@ -1,5 +1,5 @@
 //
-//  LogInView.swift
+//  AuthorizationView.swift
 //  Morze
 //
 //  Created by Mykhailo on 27.07.2022.
@@ -8,7 +8,7 @@
 import SwiftUI
 import Introspect
 
-struct LogInView: View {
+struct AuthorizationView: View {
     
     @State var uiTabarController: UITabBarController?
     private var size = UIScreen.main.bounds
@@ -89,20 +89,24 @@ struct LogInView: View {
     }
 }
 
-struct LogInView_Previews: PreviewProvider {
+struct AuthorizationView_Previews: PreviewProvider {
     static var previews: some View {
-        LogInView()
+        AuthorizationView()
     }
 }
 
 
 private struct AuthButtonView: View {
-    var title: String
-    var roundedCorners: UIRectCorner
+    let title: String
+    let roundedCorners: UIRectCorner
     
     var onDidPressed: (() -> Void)?
     
-    init(title: String, roundedCorners: UIRectCorner, action: @escaping () -> Void) {
+    init(
+        title: String,
+        roundedCorners: UIRectCorner,
+        action: @escaping () -> Void
+    ) {
         self.title = title
         self.roundedCorners = roundedCorners
         self.onDidPressed = action
